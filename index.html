@@ -27,7 +27,8 @@
         </div>
     </nav>
     
-    <!-- on a vu que tout etait centré et que le bloc occupait la moitié de l'espace à peu pret. 
+    <!-- on a vu que tout etait centré et que le bloc occupait la moitié de l'espace à peu pret en mode desktop. 
+        Par contre en mobile, on veut qu'il occupe les 12 espace
         Donc faut faire un bloc de 6 centré puisque l'espace est divisé en 12; Si on utilise la classe col, en general on utilise aussi la classe row mais pas obligé ici
     
         Sinon, on peut quand meme utiliser que col-6 et centré la marge car on a setté une taille (6)
@@ -35,7 +36,7 @@
     <header class="text-center py-5"> <!-- on centre les element et on ajoute un padding pour espacer le haut/bas-->
         <div class="container">
             <!--<div class="row justify-content-center"> <!--je centre le contenu du bloc-->
-            <div class="col-6 mx-auto" > <!-- mx auto va centré-->
+            <div class="col-12 col-md-6 mx-auto" > <!--col-12 -> en mobile il utilise tt l'espace, col-md-6 -> en medium (tablette, desktop), on occupe que la moitiée (ie 6), mx-auto va centrer-->
                 <h1>Album example</h1>
                 <p class="fw-lighter fs-5">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
                 <div class="py-2">
