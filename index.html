@@ -11,6 +11,10 @@
     <!-- on va utiliser plutot le bootstrap qu'on a récupéré via NPM (node package manager)-->    
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
+    <!--bootstrap icons-->
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+
     <link rel="stylesheet" href="style.css">
     
     <title>Bootstrap</title>
@@ -19,10 +23,31 @@
     <!-- **************NAVBAR*************** -->
     <nav class="navbar navbar-dark bg-dark">
         <div class="container"> <!---->
-            
-            <a class="navbar-brand" href="#"><i class="fa-solid fa-camera"></i>Album</a>
+            <a class="navbar-brand" href="#"><i class="bi bi-camera"></i> Album</a>
         </div>
     </nav>
     
+    <!-- on a vu que tout etait centré et que le bloc occupait la moitié de l'espace à peu pret. 
+        Donc faut faire un bloc de 6 centré puisque l'espace est divisé en 12; Si on utilise la classe col, en general on utilise aussi la classe row mais pas obligé ici
+    
+        Sinon, on peut quand meme utiliser que col-6 et centré la marge car on a setté une taille (6)
+    -->
+    <header class="text-center py-5"> <!-- on centre les element et on ajoute un padding pour espacer le haut/bas-->
+        <div class="container">
+            <!--<div class="row justify-content-center"> <!--je centre le contenu du bloc-->
+            <div class="col-6 mx-auto" > <!-- mx auto va centré-->
+                <h1>Album example</h1>
+                <p class="fw-lighter fs-5">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+                <div class="py-2">
+                    <button type="button" class="btn btn-primary">Main call to action</button>
+                    <button type="button" class="btn btn-secondary">Secondary action</button>
+                </div>
+            </div>
+            <!--</div> -->    
+        </div>
+        
+    </header>
+
+
 </body>
 </html>
